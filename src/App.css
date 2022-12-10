@@ -1,38 +1,89 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100vw;
   min-height: 100vh;
+  background:linear-gradient(rgb(166, 159, 255), rgb(214, 214, 214));
+}
+
+.loginContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 25em;
+  height: 85vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 25px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+.input-container input{
+  height: 1.5em;
+  width: 15em;
+  border-radius: 15px;
+  border-width: 15px;
+  border:white;
+  box-shadow: 0 0 6px rgb(166, 159, 255);
+  outline: none;
+  padding:10px;
+  font-size: 20px;
+}
+input:focus{   
+  box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 16px rgb(125, 115, 255);
+  outline: 0 none;
+}
+a{
+  color: rgb(0, 68, 255);
+  font-weight: 500;
+  margin: 5px;
+  cursor: pointer;
+  align-self: baseline;
+  margin-left: 40px;
+}
+.loginBut {
+  height: 4em;
+  width: 24em;
+  margin: 10px;
+  margin-top: 25px;
+  border-radius: 15px;
+  background:linear-gradient(rgb(124, 114, 255), rgb(255, 116, 116));
+  border: none;
+  transition: all .2s ease-in-out;
+}
+.loginBut:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgb(199, 199, 199);
+}
+.loginBut p{
+  color:white;
+  font-size: 20px;
+  margin-top: 13px;
+}
+.siG{
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap:18px;
+  height: 4em;
+  width: 24em;
+  margin: 10px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(152, 145, 255);
+  border-width: 3px;
+  border-style: dashed;
+  transition: all .2s ease-in-out;
 }
-
-.App-link {
-  color: #61dafb;
+.siG:hover{
+  transform: scale(1.1);
+  box-shadow: 0 0 12px rgb(199, 199, 199);
+  cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.siG p{
+  font-size: 20px;
 }
